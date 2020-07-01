@@ -1,0 +1,399 @@
+
+/*-------------*/
+
+body , html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.bold{
+    font-family: AvantGardeStdBold;
+}
+
+
+.loader{
+    position: fixed;
+    top: 47%;
+    left: 48%;
+    z-index: 99999;
+    
+}
+
+.loader{
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+#pimg1{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*fixed se queda
+    scroll se mueve*/
+    background-attachment: fixed ;
+}
+
+#pimg1{
+    min-height: 100vh;
+    filter: brightness(90%);
+    background-color: black;
+    background-image: url(../img/bg-pattern/entendernos3.webp);
+    background-attachment: scroll;
+    
+}
+
+
+@media(max-width:568px){
+    #pimg1,#pimg2,#pimg3{
+        background-attachment:scroll ;
+    }
+    
+    #lghead{
+        height: 50px !important;
+
+    }
+    
+    #pimg1{
+      /* background-image: url(../img/bg-pattern/test2orginal.webp); */
+    }
+
+    
+    #textwelcome{
+        font-size: 125% !important;
+    }
+        
+    .spacerx{
+        height: 15vh !important;
+    }
+    .spacerc{
+        height: 20vh !important;
+    }
+    .spacerp{
+        height: 20vh !important;
+    }
+    
+}
+
+@media(max-width:998px){
+    
+    
+    #lghead{
+        height: 80px !important;
+
+    }
+    
+    
+    
+}
+
+.spacerx{
+    height: 40vh;
+}
+.spacer{
+    height: 40vh;
+}
+
+.spacerc{
+    height: 40vh;
+}
+.spacerp{
+    height: 40vh;
+}
+
+/*---------------------------*/
+
+ol li, ul li {
+    list-style: outside  none;
+}
+
+@font-face {
+    font-family: AvantGardeStdBold;
+    src: url(../fonts/ITCAvantGardeStdBold.otf);
+    
+}
+
+@font-face {
+    font-family: AvantGardeStdLight;
+    src: url(../fonts/ITCAvantGardeStdXLt.otf);
+}
+
+
+@font-face {
+    font-family: AvantGardeStd;
+    src: url(../fonts/ITCAvantGardeStdBk.otf);
+}
+
+.title{
+    color: white !important;
+    font-family: AvantGardeStd;
+}
+
+#portfolio{
+    font-family: AvantGardeStdbold;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.cl{
+    border: 1px solid black;
+}
+
+
+.coloris2{
+    color: #A7DB52;
+    font-size: 18px;
+    font-weight: bold;       
+    line-height: normal;
+    font-family: 'AvantGardeStdBold', PT Sans Narrow, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.coloris2:hover{
+    background-color: #A7DB52;
+    color: #142E82;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    
+    background-color: white;
+}
+
+.pepe,.pepe::before,.pepe::after{
+     background-color: #A7DB52;
+     
+}
+
+.pepebox{
+     
+     height: 10px !important;
+}
+
+.lgheadGreen{
+    filter: brightness(100%) invert(0%); 
+}
+
+#lghead{
+    margin-left: 15px;
+    
+    height: 80px;
+    filter: brightness(0%) invert(100%); 
+}
+
+#lghead2{
+    
+    margin-left: 15px;
+    
+    height: 50px;
+   
+   
+}
+
+#nav2{
+    height: 70px !important;
+    background-color: #142E82;
+}
+
+#navbarNavDropdown2{
+    background-color: #142E82;
+}
+
+
+/*END HEADER*/
+
+
+#textwelcome{
+    padding: 50px 0;
+    margin-bottom: 0;
+    line-height: normal;
+    color: white;
+    font-family: 'AvantGardeStdBold', PT Sans Narrow, Arial, sans-serif;
+    font-size: 150%;
+
+    
+        
+
+    
+}
+
+/*WELCOME AREA*/
+
+/*END WELCOME AREA*/
+
+/*
+*/
+
+
+/*-----------------BOTONES--------------------------------*/
+
+.btny {
+	padding: 10px;
+	height: 80px;
+	text-align: center;
+	width: 230px;
+    cursor: pointer;
+    font-size: 23px;
+    font-family: 'AvantGardeStdBold', PT Sans Narrow, Arial, sans-serif;
+    text-align: left;
+}
+
+.btny-one {
+	color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+}
+.btny-one span {
+    transition: all 0.3s;
+    
+}
+
+.btny-one span p {
+   text-align: center;
+    
+}
+.btny-one::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color:    white;
+	border-bottom-color: white;
+	transform: scale(0.1, 1);
+}
+.btny-one:hover span {
+    letter-spacing: 2px;
+    color: white;
+}
+.btny-one:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.btny-one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	/*background-color: rgba(255,255,255,0.1);*/
+}
+.btny-one:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
+}
+/*Espaciado de los botones */
+.boton{
+    padding: 100px;  
+}
+
+
+/*-----------------FIN BOTONES--------------------------------*/
+
+/*---------------The Team-----------------------------------*/
+.center-r{
+    text-align: center;
+    color: black;
+    font-family: 'AvantGardeStdLight', PT Sans Narrow, Arial, sans-serif;
+    
+
+}
+
+.center-r img{
+    box-shadow: solid 1px black !important;
+}
+
+.center-r p{
+    font-size: 15px;
+}
+
+.btnz{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color:    black;
+	border-bottom-color: black;
+	transform: scale(0.1, 1);
+}
+/*---------------QUIENES SON FIN-----------------------------*/
+#portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
+    max-width: 1920px;
+  }
+  #portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box {
+    position: relative;
+    display: block;
+  }
+  #portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.774);
+    transition: opacity 0.25s ease;
+    text-align: center;
+  }
+  #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name {
+    font-size: 1.2rem;
+  }
+  #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+  }
+  
+  .text-white-75 {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+
+.info-contacto{
+    color: #A7DB52;
+    font-family: AvantGardeStd;    font-size: 18px;
+
+}
+
+
+html{
+    scroll-behavior: smooth;
+}

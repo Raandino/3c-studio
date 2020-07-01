@@ -1,0 +1,90 @@
+
+
+
+body , html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+
+#pimg1,#pimg11{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*fixed se queda
+    scroll se mueve*/
+    background-attachment: fixed ;
+}
+
+#pimg1{
+    min-height: 100%;
+    filter: brightness(90%);
+    background-color: black;
+    background-image: url(../img/bg-pattern/entendernos3.png);
+    background-attachment: scroll;
+}
+
+#pimg11{
+    /* background-color: #A7DB52;**/
+     min-height: 10%;
+     background-attachment: fixed ;
+     
+ }
+
+@font-face {
+    font-family: AvantGardeStdLight;
+    src: url(font/ITCAvantGardeStdXLt.otf);
+}
+
+
+
+    .coloris2{
+        color: #A7DB52;
+        font-size: 18px;
+        font-weight: bold;       
+        line-height: normal;
+        font-family: 'AvantGardeStdBold', PT Sans Narrow, Arial, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+    }
+    
+    .coloris2:hover{
+        background-color: #A7DB52;
+        color: #142E82;
+    }
+    
+    .pepe,.pepe::before,.pepe::after{
+        background-color: #A7DB52;
+        
+   }
+
+   
+   .pepebox{
+     
+    height: 10px !important;
+}
+
+
+#lghead2{
+    
+    margin-left: 15px;
+    
+    height: 40px;
+   
+   
+}
+
+#nav2{
+    height: 50px !important;
+    background-color: #142E82;
+}
+
+#navbarNavDropdown2{
+    background-color: #142E82;
+}

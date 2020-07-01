@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="img/core-img/favicon.ico">
+    <!-- Title  -->
+    <title>3 C Studio</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/hamburgers.css">
+    <link rel="stylesheet" href="./css/social-icn.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/loaderC.css">
+</head>
+<body >
+    
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="card card-3">
+            <div id="fotomodal" class="card-heading"></div>
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-10">
+                            <h2 class="title modal-title">Contáctanos</h2>
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" style="color: white;">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <form action="enviar.php" method="POST">
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Empresa"             name="nombre_empresa" required>
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Persona de contacto" name="persona_contacto" required>
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-3" type="email" placeholder="Email"              name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Telefono"            name="phone" required>
+                    </div>
+                    <a href="p_privacidad.html" id="privaciad"><u> Política de Privacidad </u></a>                                                  
+                    
+                    <div class="p-t-10">
+                        <button class="btn btn--pill btn--green" type="submit" name="enviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+    <!--Blue header -->
+    <header id="h2">
+        <nav id="nav2" class="navbar  navbar-expand-lg  main_header_area fixed-top " >
+            <a class="navbar-brand "  href="#">
+                
+                <img id="lghead2" src="img/core-img/Recurso-responsive.webp" alt="">
+            </a>
+            <button class="navbar-toggler   " type="button" data-toggle="collapse" data-target="#navbarNavDropdown2" aria-controls="navbarNavDropdown2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-box   ">
+                <span class="hamburger-inner pepe " id="hamburgesa2"></span>
+                </span>
+            </span>
+            </button>
+        
+            <div class="collapse navbar-collapse justify-content-end" " id="navbarNavDropdown2">
+            <ul class="navbar-nav mm-st" id="ulnav" >
+                <li class="nav-item text-center" >
+                     <a class="nav-link coloris2" id="textinfo1" href="#pimg3">Nosotros</a>
+                </li>
+                <li class="nav-item  text-center">
+                     <a class="nav-link coloris2" id="textinfo2" href="#pimg8">Proyectos</a>
+                </li>
+                <li class="nav-item  text-center">
+                    <a class="nav-link coloris2" id="textinfo3" href="#equipo">Equipo</a>
+                </li>
+
+                <li class="nav-item  text-center">
+                    <a class="nav-link coloris2" id="textinfo4" href="#" data-toggle="modal" data-target="#exampleModal">Contáctanos</a>
+                </li>
+            </ul>
+            </div>
+        </nav> 
+    </header>
+
+    <!--First section with white white header and landing section -->
+    <div class="container-fluid" id="pimg1" >
+        <div class="row ">
+            <div class="col" >               
+                <header id="h1">
+                    <nav id="nav1" class="navbar  navbar-expand-lg  main_header_area " >
+                        <a class="navbar-brand"  href="#">
+                        <img id="lghead" src="img/core-img/Recurso.webp" alt="">
+                        </a>
+                        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="hamburger-box ">
+                                <span class="hamburger-inner " id="hamburgesa"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" " id="navbarNavDropdown">
+                                <ul class="navbar-nav mm-st" id="ulnav" >
+                                    <li class="nav-item text-center" >
+                                        <a class="nav-link coloris" id="textinfo1" href="#pimg3">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item  text-center">
+                                        <a class="nav-link coloris" id="textinfo2" href="#pimg8">Proyectos</a>
+                                    </li>
+                                    <li class="nav-item  text-center">
+                                        <a class="nav-link coloris" id="textinfo3" href="#equipo">Equipo</a>
+                                    </li>
+                                    <li class="nav-item  text-center">
+                                        <a class="nav-link coloris" id="textinfo4" href="#" data-toggle="modal" data-target="#exampleModal">Contáctanos</a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </nav> 
+                </header>
+            </div>
+        </div>
+        <div class="row  d-flex justify-content-end align-items-end" style="height: 85vh;" id="estra">
+            <div class="mr-5 mb-5 ">
+            <h4 class="mb-4">Comunicación Estratégica</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome text -->
+    <div class="container-fluid" id="pimg6">
+        <p id="textwelcome" class="wow fadeInUp text-break text-center">
+            Creamos día día como equipo junto a nuestros clientes <br>
+             para materializar con éxito nuestros proyectos
+        </p>
+    </div>
+
+    <!-- Seccion De botones con la marca -->
+    <div class=" container-fluid" id="pimg3">
+        
+            <div class=" row h-50 " id="secbtn">          
+                <div class="  col-12 col-md-6 boton  align-self-center  ">              
+                    <div class="row justify-content-center">
+                        <div class=" col-auto"></div>
+                        <div class=" col-auto ">
+                            <div class="row ">
+                                <a href="html/cultura.html" target="">
+                                <div class="btny btny-one">
+                                    <span><p>Cultura <br> Corporativa</p></span>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" col-auto" > 
+                        </div>
+                    </div>
+                </div> 
+                <div class="  col-12 col-md-6 boton align-self-center">
+                    <div class=" row justify-content-center">
+                        <div class=" col-auto"></div>
+                        <div class=" col-auto ">
+                            <div class="row ">
+                                <a href="html/marketing.html" >
+                                <div class="btny btny-one">
+                                    <span><p>Marketing <br> Social</p></span>
+                                </div>
+                                </a>    
+                            </div>
+                        </div>
+                        <div class=" col-auto"></div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class=" row h-50 " id="secbtn">
+                <div class=" col-12 col-md-6 boton align-self-center">
+                    <div class="row justify-content-center">
+                        <div class=" col-auto"></div>
+                        <div class=" col-auto ">
+                            <div class="row ">
+                                <a href="html/analisis.html" >
+                                <div class="btny btny-one">
+                                    <span><p>Análisis <br> de Marca</p></span>
+                                </div>
+                                </a>
+                            </div>-
+                        </div>
+                        <div class=" col-auto"></div>
+                    </div>
+                </div> 
+                <div class=" col-12 col-md-6 boton align-self-center">
+                    <div class="row justify-content-center">
+                        <div class=" col-auto"></div>
+                        <div class=" col-auto ">
+                            <div class="row ">
+                                <a href="html/proyectos.html" >
+                                <div class="btny btny-one">
+                                    <span><p>Nuestros <br> Proyectos</p></span>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" col-auto"></div>
+                    </div>
+                </div> 
+            </div>
+        
+
+        
+    </div>
+    
+    <!--Carouserl 1 de bienvenida -->    
+    <div class="container-fluid" id="pimg4">
+        <div id="carouselExampleIndicators" class="wow fadeInUp carousel slide " data-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <img class="d-block w-100" src="img/advisor-img/tes-1.webp" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/advisor-img/tes-2.webp" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/advisor-img/tes-3.webp" alt="Third slide">
+            </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="mktSocial" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content" >
+                <div class="projectos">
+                    <img src="./img/gallery/2.webp" alt="">
+                </div>            
+            </div>
+        </div>
+    </div>
+    <!-- Photos projects gallery -->
+    <div class="container-fluid" id="pimg8">
+        <section id="portfolio">
+            <div class="wow fadeInUp container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-12 col-md-6">
+                        <a class="portfolio-box"  href="./html/responsabilidadP.html" target="_blank" >
+                            <img class="img-fluid w-100" src="img/gallery/responsabilidad.png" alt="" />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-name">Responsabilidad Social Empresarial</div>
+                            </div></a>
+                        
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <a class="portfolio-box" href="./html/diseño.html" target="_blank">
+                            <img class="img-fluid w-100" src="img/gallery/diseño.png" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-name">Diseño</div>
+                            </div></a>
+                        
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <a class="portfolio-box" href="./html/marketingP.html" target="_blank" >
+                            <img class="img-fluid w-100" src="img/gallery/2.webp.png" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-name">Marketing Social</div>
+                            </div></a>
+                       
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <a class="portfolio-box" href="./html/produccionP.html" target="_blank">
+                            <img class="img-fluid w-100" src="img/gallery/9.webp.png" alt="" />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Producción Audiovisual</div>
+                            </div></a>
+                       
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <a class="portfolio-box" href="./html/activaciones.html" target="_blank">
+                            <img class="img-fluid w-100" src="img/gallery/32.png" alt="" />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Activaciones</div>
+                            </div></a>
+                        
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <a class="portfolio-box" href="./html/proyectosp.html" target="_blank">
+                            <img class="img-fluid w-100" src="img/gallery/7.webp.png" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-name">Proyectos</div>
+                            </div></a>
+                        
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <a class="portfolio-box" href="./html/fortalecimiento.html" target="_blank">
+                            <img class="img-fluid w-100" src="img/gallery/confe.jpeg" alt="" />
+                        <div class="portfolio-box-caption">
+                                <div class="project-name">Fortalecimiento Institucional</div>
+                            </div></a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <a class="portfolio-box" href="./html/eventos.html" target="_blank">
+                            <img class="img-fluid w-100" src="img/gallery/5.webp.png" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-name">Eventos corporativos</div>
+                            </div></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!--Carousel de patrocinadores -->
+    <div class="container-fluid" id="pimg7">
+        <div id="carouselExampleIndicators" class="wow fadeInUp carousel slide " data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <img class="d-block w-100" src="img/bg-pattern/Empresas-1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="img/bg-pattern/Empresas-2.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="img/bg-pattern/Empresas-3.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="img/bg-pattern/Empresas-4.jpg.png" alt="First slide">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!--Mapa -->
+    <div class="" id="equipo">
+        
+        <img src="img/bg-pattern/alianzas.webp.png" class="wow fadeInUp d-block w-100" alt="">
+    </div>
+    
+    <!--Social Media Icons-->
+    <div class="wow fadeInUp" id="pimg11">     
+    </div>
+
+    <div class="container-fluid" id="pimg6">
+
+        <div class="row wow fadeInUp" id="infotext">
+            <div class="  col-1 col-md-2"></div>
+            <div class="  col-10 col-md-8 mt-3 ">
+                <div class="row"><p class="info-contacto  w-100 text-center">3C STUDIO</p></div>
+                <div class="row"><p class="info-contacto  w-100 text-center">Colonial los Robles, de Juanes Estilistas 50mts</p></div>
+                <div class="row"><p class="info-contacto  w-100 text-center">al sur casa #202, Managua, Nicaragua,</p></div>
+                <div class="row"><p class="info-contacto  w-100 text-center">+505 2223 3094</p></div>
+                <div class="row"><p class="info-contacto  w-100 text-center">direccion@grupo3cideas.com</p></div>
+            </div>
+            <div class="  col-1 col-md-2"></div>
+        </div>
+         <div class="wow fadeInUp row mt-3 ">
+             <div class="col">
+                <div class="social-container">
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/grupo3cideas/#" target="_blank"><i class="fa fa-facebook facebook-icn"></i></a></li>
+                        <li><a href="https://www.instagram.com/3cstudio/?hl=es-la" target="_blank"><i class="fa fa-instagram instagram-icn"></i></a></li>
+                        <li><a href="https://g.page/3c-studio-Nicaragua?share" target="_blank"><i class="fa fa-map map-icn"></i></a></li>
+                    </ul>
+                </div> 
+             </div>
+         </div>
+    </div>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/headerAnimation.js"></script>
+        <script src="./js/hamburger.js"></script>
+        <script src="./js/wow.min.js"></script>
+        <script>
+        $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+        });
+
+        $('.navbar-nav>li>a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+        });
+
+        $('a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+        });
+        </script>
+</body>
+</html>

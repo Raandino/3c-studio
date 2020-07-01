@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="img/core-img/favicon.ico">
+    <!-- Title  -->
+    <title>3 C Studio</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/analisis.css">
+    <link rel="stylesheet" href="../css/hamburgers.css">
+    <link rel="stylesheet" href="../css/social-icn.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/loaderC.css">
+</head>
+<body >
+    
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+        
+      <div class="modal-body">
+        <div class="card card-3">
+            <div id="fotomodal" class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title">Contáctanos</h2>
+                <form action="enviar.php" method="POST">
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Empresa"             name="nombre_empresa" required>
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Persona de contacto" name="persona_contacto" required>
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-3" type="email" placeholder="Email"              name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Telefono"            name="phone" required>
+                    </div>
+                    <a href="p_privacidad.html" id="privaciad"><u> Política de Privacidad </u></a>                                                  
+                    
+                    <div class="p-t-10">
+                        <button class="btn btn--pill btn--green" type="submit" name="enviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+    <!--Blue header -->
+    <header id="h2">
+        <nav id="nav2" class="navbar  navbar-expand-sm  main_header_area fixed-top " >
+            <a class="navbar-brand "  href="#">
+                <img id="lghead2" src="../img/core-img/Recurso-responsive.webp" alt="">
+            </a>
+            <ul class="navbar-toggler mm-st" id="ulnav" >
+                <li class="nav-item  text-center">
+                    <a class=" respontitle nav-link coloris2" id="textinfo4" href="../index.html#pimg3" data-toggle="modal" data-target="#exampleModal">Volver</a>
+                </li>
+            </ul>
+            
+            
+            <div class="collapse navbar-collapse justify-content-end" " id="navbarNavDropdown2">
+            <ul class="navbar-nav mm-st" id="ulnav" >
+                <li class="nav-item  text-center">
+                    <a class="nav-link coloris2" id="textinfo4" href="../index.html#pimg3" data-toggle="modal" data-target="#exampleModal">Volver</a>
+                </li>
+            </ul>
+            </div>
+        </nav> 
+    </header>
+
+    <!--First section with white white header and landing section -->
+    <div class="container-fluid " id="pimg1" >
+        
+        <div class=" row ">
+            spaCER
+        </div>
+
+        <div class="row mt-4">
+            <div class=" title mt-5 col-sm-12 col-md-6 col-lg-auto ">
+                <h2>Análisis de Marca</h2>
+            </div>
+        </div>
+        <div class="rpw spacer " ></div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="w-100 text-center title mt-5 col-10  ">
+                <h4>Análisis de marca interno y externo que nos
+                     permite conocer <strong class="bold">dónde</strong> 
+                     estamos,<strong class="bold">cómo</strong>  nos 
+                     ven y qué <strong class="bold">valores</strong> les transmitimos.</h4>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+    </div>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/hamburger.js"></script>
+        <script>
+        $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+        });
+        </script>
+</body>
+</html>

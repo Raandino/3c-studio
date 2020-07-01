@@ -1,0 +1,614 @@
+    /* >>>>>>>>>>>>>> :: 1.0 Import All CSS & Fonts <<<<<<<<<<<<<<< */
+    @import 'css/bootstrap.min.css';
+    @import 'css/magnific-popup.css';
+    @import 'css/animate.css';
+    @import 'css/meanmenu.css';
+    @import 'css/icofont.css';
+    @import 'css/owl.carousel.css';
+
+    @import 'fonts/ITC-Avant-Garde-Book-Oblique.otf'
+    @import 'fonts/ITC-Avant-Garde-Book-Oblique.woff'
+    @import 'fonts/ITC-Avant-Garde-Bold-Oblique.otf'
+    @import 'fonts/ITC-Avant-Garde-Bold-Oblique.woff'
+
+    /* >>>>>>>>>>>>>> :: 2.0 Common CSS <<<<<<<<<<<<<<< */  
+
+     * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .floatleft {
+        float: left
+    }
+    
+    .floatright {
+        float: right
+    }
+    
+    .alignleft {
+        float: left;
+        margin-right: 15px;
+    }
+    
+    .alignright {
+        float: right;
+        margin-left: 15px;
+    }
+    
+    .aligncenter {
+        display: block;
+        margin: 0 auto 15px;
+    }
+    
+    a:focus {
+        outline: 0px solid;
+    }
+	h3 {color: #000;   font-family: 'Avant Garde', 'sans-serif'; 
+       font-style: bold; font-variant: normal;  }
+       h2, h4 { color: #00008b;   font-family: 'Avant Garde', 'sans-serif'; 
+       font-style: bold; font-variant: normal; }    
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0 0 15px;
+        font-weight: 700;
+       font-family: 'Avant Garde', 'sans-serif'; 
+       font-style: bold; font-variant: normal;
+    }
+    
+    body,
+    p {
+        font-family: 'Avant Garde', 'sans-serif';
+        font-weight: 400;
+        color: #fff;
+        font-size: 16px;
+        line-height: 1.4;
+        font-style: bold; font-variant: normal;
+    }
+    
+    a,
+    a:hover,
+    a:focus {
+        -webkit-transition: all 700ms ease 0s;
+        transition: all 700ms ease 0s;
+        text-decoration: none;
+        outline: none;
+        font-weight: 600;
+        font-family: 'Avant Garde', 'sans-serif';
+        font-style: bold; font-variant: normal;
+    }
+    
+    ul {
+        margin: 0;
+    }
+    
+    ol li,
+    ul li {
+        list-style: outside none none;
+    }
+    
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .table {
+        display: table;
+        z-index: 9;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .table_cell {
+        display: table-cell;
+        vertical-align: middle;
+		position:absolute;
+		width:60%; left:20%; 
+		top: 25%;  
+		height: 50%;
+		text-align: center;
+    }
+   
+    .margin_top_30 {
+        margin-top: 30px;
+    }
+    
+   
+   /* >>>>>>>>>>>>>> :: 3.0 Preloader CSS <<<<<<<<<<<<<<< */
+    div#preloader {
+        overflow: hidden;
+        background-color: #fff;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999999;
+    }
+    
+    .cssload-loader {
+        -webkit-animation: 2.3s ease 0s normal none infinite running cssload-loader;
+        animation: 2.3s ease 0s normal none infinite running cssload-loader;
+        border: 5px solid #A7DB52;
+        display: block;
+        height: 50px;
+        margin: auto;
+        position: fixed;
+        width: 50px;
+        left: 50%;
+        margin-left: -25px;
+        top: 50%;
+        margin-top: -25px;
+        border-radius: 1px;
+    }
+    
+    .cssload-loader-inner {
+        vertical-align: top;
+        display: inline-block;
+        width: 100%;
+        background-color: #A7DB52;
+        animation: cssload-loader-inner 2.3s infinite ease-in;
+        -o-animation: cssload-loader-inner 2.3s infinite ease-in;
+        -ms-animation: cssload-loader-inner 2.3s infinite ease-in;
+        -webkit-animation: cssload-loader-inner 2.3s infinite ease-in;
+        -moz-animation: cssload-loader-inner 2.3s infinite ease-in;
+    }
+    
+    @keyframes cssload-loader {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        25% {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        50% {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        75% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    
+    @-webkit-keyframes cssload-loader {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        25% {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        50% {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        75% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes cssload-loader-inner {
+        0% {
+            height: 0%;
+        }
+        25% {
+            height: 0%;
+        }
+        50% {
+            height: 100%;
+        }
+        75% {
+            height: 100%;
+        }
+        100% {
+            height: 0%;
+        }
+    }
+    
+    @-webkit-keyframes cssload-loader-inner {
+        0% {
+            height: 0%;
+        }
+        25% {
+            height: 0%;
+        }
+        50% {
+            height: 100%;
+        }
+        75% {
+            height: 100%;
+        }
+        100% {
+            height: 0%;
+        }
+    }
+    
+    #scrollUp {
+        background-color: #A7DB52;
+        border-radius: 5px;
+        bottom: 20px;
+        color: #fff;
+        font-size: 30px;
+        padding: 0 5px;
+        right: 20px;
+    }
+
+
+    /* >>>>>>>>>>>>>> :: 4.0 Header Area CSS <<<<<<<<<<<<<<< */
+    header {
+        height: auto;
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+    }
+    
+    .logo_area {
+        padding: 5px 0;
+    }
+    
+    .main_header_area {
+        height: 150px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+    
+    .main_header_area.sticky {
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+        z-index: 999999 !important;
+        background-color: #142E82;
+        width: 100%;
+        position: fixed;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+    }
+    
+    .main_menu_area {
+        float: center;
+        position: relative;
+        z-index: 1;
+        
+        
+    }
+    
+    .mainmenu {
+        display: inline-block;
+        
+    }
+    
+    .mainmenu {
+        text-align: center;
+        
+    }
+    
+    .mainmenu ul#nav li {
+        display: inline-block;
+        position: relative;
+        background:rgba(0, 0, 0, 0.2);
+    }
+    
+    .mainmenu ul#nav li a {
+        color: #fff;
+        display: block;
+        font-size: 18px;
+        font-weight: 700;       
+        height: 100px;
+        line-height: 13px;
+        padding: 75px 15px;
+        
+       
+    }
+    
+    .main_header_area.sticky .mainmenu ul#nav li a {
+        color: #A7DB52;
+    }
+    
+    .main_header_area .mainmenu ul#nav li.current_page_item a {
+        color: #A7DB52;
+    }
+    
+    .main_header_area.sticky .mainmenu ul#nav li.current_page_item a {
+        background-color: darkblue;
+    }
+    
+    .main_header_area .mainmenu ul#nav li.current_page_item a {
+        background-color: transparent;
+        height: 100px;
+        
+    }
+    
+    .mainmenu ul#nav li a i,
+    .mean-container .mean-nav ul li a i {
+        font-size: 17px;
+        padding-left: 5px;
+    }
+    
+    .mainmenu ul#nav li ul {
+        text-align: left;
+    }
+    
+    .mainmenu ul#nav li ul li a {
+        padding-left: 15px !important;
+        text-align: left !important;
+    }
+    
+    .main_header_area.sticky .mainmenu ul#nav li.active a,
+    .main_header_area.sticky .mainmenu ul#nav li:hover a,
+    .mainmenu ul#nav li.active a,
+    .mainmenu ul#nav li:hover a {
+        color: #fff;
+    }
+    
+    .blog_page .main_header_area {
+        background-color: #fff;
+    }
+    
+    .about_area,
+    .why_choose_us_area,
+    .message_now_area {
+        background-color: #fff;
+    }
+
+    /* >>>>>>>>>>>>>> :: 5.0 Slider Area CSS <<<<<<<<<<<<<<< */
+    .welcome_area {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+		background-size: cover;
+    }
+    
+    .single_slide {
+        position: relative;
+        z-index: 1;
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    .single_slide:before {
+        position: absolute;
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;        
+        content: "";
+    }
+    
+.slide_text
+{
+    position:absolute; width:60%; left:20%; top: 25%;  height: 50%; text-align: center; 
+}
+.slide_text2
+{
+    position:absolute; width:80%; left:10%; top: 10%;  height: 80%; text-align: center; 
+}
+    .single_slide .slide_text {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 999;
+       
+    }
+    
+    .single_slide .slide_text h4 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+        float: right;
+        margin-top: 450px;
+        margin-right: 10%;
+        text-align: center;
+    }
+    
+    .single_slide .slide_text h2 > span {
+        color: #FF9800;
+    }
+    
+    .single_slide .slide_text h3 {
+        font-weight: 600;
+        color: #000;
+        font-size: 20px;
+        text-align: left;
+    }
+    
+    .single_slide .slide_text a {
+        background-color: #354b60;
+        border: medium none;
+        border-radius: 6px;
+        color: #fff;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 19px;
+        margin: 15px auto 0;
+        padding: 15px 24px;
+        text-transform: capitalize;
+        width: auto;
+    }
+    .single_slide .slide_text2 {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 999;
+       
+    }
+    
+    .single_slide .slide_text2 h4 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+        float: right;
+        margin-top: 450px;
+        margin-right: 10%;
+        text-align: center;
+    }
+    
+    .single_slide .slide_text2 h2 > span {
+        color: #FF9800;
+    }
+    
+    .single_slide .slide_text2 h3 {
+        font-weight: 600;
+        color: #000;
+        font-size: 20px;
+        text-align: left;
+    }
+    
+    .single_slide .slide_text2 a {
+        background-color: #354b60;
+        border: medium none;
+        border-radius: 6px;
+        color: #fff;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 19px;
+        margin: 15px auto 0;
+        padding: 15px 24px;
+        text-transform: capitalize;
+        width: auto;
+    }
+    .single_slide .slide_text a:hover {
+        background-color: #FF9800;
+        color: #fff;
+    }
+    
+    .welcome_area .welcome_slides .owl-nav {
+        height: auto;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .welcome_area .welcome_slides .owl-nav .owl-prev,
+    .welcome_area .welcome_slides .owl-nav .owl-next {
+        background-color: #fff;
+        border-radius: 50%;
+        color: #FF9800;
+        cursor: pointer;
+        font-weight: 400;
+        height: 50px;
+        position: absolute;
+        text-align: center;
+        top: -20px;
+        -webkit-transition: all 300ms ease-in 0s;
+        transition: all 300ms ease-in 0s;
+        width: 50px;
+        z-index: 999;
+    }
+    
+    .welcome_area .welcome_slides .owl-nav .owl-prev {
+        left: -55px;
+    }
+    
+    .welcome_area .welcome_slides .owl-nav .owl-next {
+        right: -55px;
+    }
+    
+    .welcome_area .welcome_slides .owl-nav .owl-prev:hover,
+    .welcome_area .welcome_slides .owl-nav .owl-next:hover {
+        background-color: #FF9800;
+        color: #fff
+    }
+    
+    .welcome_area .welcome_slides:hover .owl-nav .owl-prev {
+        left: 15px;
+    }
+    
+    .welcome_area .welcome_slides:hover .owl-nav .owl-next {
+        right: 15px;
+    }
+    
+    .welcome_area .welcome_slides .owl-nav .owl-prev > i,
+    .welcome_area .welcome_slides .owl-nav .owl-next > i {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+    
+    .welcome_area.static_version .single_slide {
+        background-attachment: fixed;
+    }
+
+ .section_padding_150 {
+        padding: 150px 0;
+    }
+   .section_padding_50 {
+        padding: 20px 0;
+    }
+    
+    
+    .section_padding_100 {
+        padding: 80px 0;
+    }
+    
+    .section_padding_100_0 {
+        padding: 100px 0 0 0;
+    }
+    
+    .section_padding_0_100 {
+        padding: 0 0 100px 0;
+    }
+    
+    .section_padding_100_50 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .section_padding_100_70 {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+    
+    .section_padding_200 {
+        padding: 200px 0;
+    }
+
+/* >>>>>>>>>>>> Gradient Version Area CSS <<<<<<<<<<<< */
+    .gradient_version .single_slide:before,
+    .gradient_version .video_area:before,
+    .gradient_version .our_speciality_area:before,
+    .gradient_version .faq_question_area:before,
+    .gradient_version .testimonial_area:before {
+        opacity: 0.5;
+
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        background: #348F50;
+        background: -webkit-linear-gradient(to left, #348F50, #56B4D3);
+        background: -webkit-linear-gradient(right, #348F50, #56B4D3);
+        background: linear-gradient(to left, #348F50, #56B4D3);
+    }
+
+
+  
